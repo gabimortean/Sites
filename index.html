@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo10.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="">COLEÇÃO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Alfaiataria  .  Arte  .  Design</h1>
+    <p>Aos apreciadores da qualidade, elegância e simplicidade que envolvem os nuânces da Alfaiataria, sejam muito bem vindos!<br>Todos os processos são desenvolvidos de forma artesanal e com as melhores técnicas do mercado.</p>
+    <a href="" class="hero-btn">Saiba mais</a>
+</div>
+
+</section>
+
+<!------------------Nossas Seleções---------------------------------->
+<section class="nossas-selecoes">
+    <h1>Nossas Seleções</h1>
+    <p>Texto pequeno a criar</p>
+
+    <div class="row">
+        <div class="selecoes">
+            <h3>Feminino</h3>
+            <p>Uma coleção especial, que resgata a essência do ser, propõe a liberdade para alcançarmos a realidade com leveza e sofisticação</p>
+        </div>
+
+        <div class="selecoes">
+            <h3>Masculino</h3>
+            <p>Pensado no masculino pelo masculino. Sua vida pode ser cheia de cores, texturas e alegrias. Os elementos se conectam e se integram em uma sutil, elegante e especial coleção. </p>
+        </div>
+
+        <div class="selecoes">
+            <h3>Infantil</h3>
+            <p>Basta olhar para o céu, criar inúmeras claves de sol. Sinos se transformam e crescem ao longo do caminho. Do cheiro giz pastel à risada do palhaço, as sensações prevalecem nessa coleção única, colorida.</p>
+        </div>
+    </div>
+    
+</section>
+
+
+<!------------------JavaScript for toggle menu------------------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
